@@ -1,0 +1,168 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+.box{
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    width: 70vw;
+    height: 50vh;
+    top: 25vh;
+    left: 15vw;
+    border-radius: 1vh;
+    z-index: 99;
+}
+
+.box #title{
+    color: rgb(0, 0, 0);
+    position: relative;
+    margin-top: 3vh;
+    margin-bottom: 4vh;
+    left: 11vw;
+    width: 10vw;
+    font-size: 4vh;
+    color: black;
+    font-weight: 800;
+}
+
+input{
+    background-color: transparent;
+    width: 16vw;
+    height: 5vh;
+    margin-bottom: 2vh;
+    border: none;
+    border-bottom: 2px solid silver;
+    outline: none;
+    font-size: 2vh;
+    font-weight: 600;
+}
+
+label{
+    font-size: 2.5vh;
+    font-weight: 400;
+    color: black;
+    margin-left: 4vw;
+}
+
+.right #email{
+    margin-left: 3vw;
+}
+
+.box #email{
+    margin-top: 0vh;
+}
+
+.box #userpassword{
+    margin-left: 1vh;
+}
+
+.box #userpassword_repeat{
+    margin-left: 2vw;
+}
+
+.box #password{
+    margin-top: 3vh;
+}
+
+
+
+.box a{
+    text-decoration: none;
+    font-size: 1em;
+    font-weight: 800;
+    color: #2c2c2c;
+    margin-left: 19vw;
+}
+
+#error
+{
+    position: absolute;
+    font-size: 1.5vh;
+    color: rgb(204, 30, 30);
+    font-weight: 800;
+    left: 4vw;
+    z-index: 999;
+}
+
+.btn{
+    background-color: rgb(83, 83, 83);
+    width: 20vw;
+    height: 48px;
+    border-radius: 3vh;
+    margin-top:2vh;
+    font-size: 1.5em;
+    font-weight: 600;
+    color: white;
+    margin-left: 5vw;
+}
+
+.btn #signbtn{
+    margin-left: 0;
+    
+}
+
+.btn:hover{
+    background-color: #2c2c2c;
+}
+
+.right{
+    position: absolute;
+    left: 40vw;
+}
+
+#myPicture{
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    opacity: 0.4;
+    object-fit: cover;
+}
+
+#frontpic{
+    position: absolute;
+    width: 40vw;
+    height: 50vh;
+}
+
+#nameused{
+    position: absolute;
+    top: 17vh;
+    left: 12vw;
+    font-size: 1.5vh;
+    color: rgb(204, 30, 30);
+    font-weight: 800;
+}
+
+#used{
+    position: absolute;
+    top: 24vh;
+    left: 12vw;
+    font-size: 1.5vh;
+    color: rgb(204, 30, 30);
+    font-weight: 800;
+}
+
+#checklength{
+    position: absolute;
+    top: 31vh;
+    left: 12vw;
+    font-size: 1.5vh;
+    color: rgb(204, 30, 30);
+    font-weight: 800;
+}
+
+#checkrepeat{
+    position: absolute;
+    top: 38vh;
+    left: 12vw;
+    font-size: 1.5vh;
+    color: rgb(204, 30, 30);
+    font-weight: 800;
+}

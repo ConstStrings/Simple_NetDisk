@@ -1,0 +1,133 @@
+.background #bottom_bg{
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    opacity: 0.4;
+    object-fit: cover;
+
+}
+
+.box{
+    background-color: white;
+    position: absolute;
+    width: 70vw;
+    height: 60vh;
+    top: 20vh;
+    left: 15vw;
+    border-radius: 1vh;
+}
+
+.box #front_img{
+    width: 33vw;
+    height: 30vw;
+    position: absolute;
+    top: 1vh;
+    left: 2vw;
+}
+
+.box #title{
+    font-size: 3vh;
+    position: absolute;
+    top: 1vh;
+    left: 47vw;
+    color: black;
+    font-weight: 800;
+}
+
+input{  
+    background-color: transparent;
+    width: 20vw;
+    height: 5vh;
+    margin-bottom: 2vh;
+    border: none;
+    border-bottom: 2px solid silver;
+    outline: none;
+    font-size: 2vh;
+    font-weight: 600;
+}
+
+label{
+    font-size: 2.5vh;
+    font-weight: 400;
+    color: black;
+}
+
+#sub{
+    position: absolute;
+    left: 40vw;
+    top: 15vh;
+}
+
+#email{
+    margin-left: 2.7vw;
+}
+
+#code{
+    margin-left: 2.7vw;
+    width: 12vw;
+}
+
+#password_re{
+    margin-left: 1.7vw;
+}
+
+.btn{
+    background-color: rgb(110, 110, 110);
+    width: 24vw;
+    height: 48px;
+    border-radius: 4vh;
+    margin-top:2vh;
+    font-size: 1.5em;
+    font-weight: 400;
+    color: white;
+    margin-left: 2vw;
+    
+}
+
+#getcode{
+    width: 6vw;
+    height: 36px;
+    font-size: 1em;
+    font-weight: 400;
+}
+
+#checkemail{
+    position: absolute;
+    top: 4vh;
+    left: 8vw;
+    font-size: 1.5vh;
+    color: rgb(204, 30, 30);
+    font-weight: 800;
+}
+
+#checkcode{
+    position: absolute;
+    top: 13vh;
+    left: 8vw;
+    font-size: 1.5vh;
+    color: rgb(204, 30, 30);
+    font-weight: 800;
+}
+
+#checklength{
+    position: absolute;
+    top: 20vh;
+    left: 8vw;
+    font-size: 1.5vh;
+    color: rgb(204, 30, 30);
+    font-weight: 800;
+}
+
+#checkrepeat{
+    position: absolute;
+    top: 28vh;
+    left: 8vw;
+    font-size: 1.5vh;
+    color: rgb(204, 30, 30);
+    font-weight: 800;
+}
+

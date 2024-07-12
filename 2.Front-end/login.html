@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="zh_CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log in</title>
+    <link rel="stylesheet" href="./css/login.css">
+</head>
+<body>
+<div class="back">
+    <img id="myPicture" src="./imgs/back.jpg"/>
+</div>
+
+<div class="box">
+    <img src="./imgs/bg.jpg" alt="" id="frontpic">
+    <div class="right">
+        <p id="title">Login</p>
+        <form action="/Web_war_exploded/login" method="post">
+            <label for="email">Email:</label>
+            <input type="email" placeholder="  UserName" id="email" name="email">
+            <br>
+            <label for="Password">Password:</label>
+            <input type="password" placeholder="  Password" id="password" name="password">
+            <br>
+            <p id="error"></p>
+            <a href="/Web_war_exploded/forgetpwd.html">Forget Password</a>
+            <br>
+            <button type="submit" class="btn"  id="logbtn">登录</button>
+            <button type="button" class="btn"  id="signbtn">注册</button>
+        </form>
+    </div>
+</div>
+<script src="./js/login.js"></script>
+</body>
+</html>

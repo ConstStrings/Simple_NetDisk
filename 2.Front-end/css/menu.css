@@ -1,0 +1,28 @@
+.background #bottom_bg{
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    opacity: 0.4;
+    object-fit: cover;
+
+}
+
+.box{
+    background-color: white;
+    position: absolute;
+    width: 70vw;
+    height: 60vh;
+    top: 20vh;
+    left: 15vw;
+    border-radius: 1vh;
+}
+
+h1{
+    font-size: 4vh;
+    text-align: center;
+    margin-top: 2vh;
+}

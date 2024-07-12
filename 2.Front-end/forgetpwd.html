@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="zh_CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/forgetpwd.css">
+    <title>Forget Password</title>
+</head>
+<body>
+    <div class="background">
+        <img src="./imgs/bg_error.jpg" alt="" id="bottom_bg">
+    </div>
+    <div class="box">
+        <img src="./imgs/bg_front.jpg" id="front_img" alt="">
+        <p id="title">Reset Password</p>
+        <div id="sub">
+            <form action="/Web_war_exploded/forgetpwd" method="post" id="myform">
+                <label for="email">Email:</label>
+                <input type="email" placeholder="Email" name="email" id="email" required>
+                <p id="checkemail"></p>
+                <br>
+                <label for="email">Code:</label>
+                <input type="text" placeholder="Verification Code" name="code" id="code" required>
+                <button class="btn" id="getcode" type="button">Get Now</button>
+                <p id="checkcode"></p>
+                <br>
+                <label for="email">Password:</label>
+                <input type="password" placeholder="New Password" name="password" id="password" required>
+                <p id="checklength"></p>
+                <br>
+                <label for="email">Repeat:</label>
+                <input type="password" placeholder="Confirm Password" name="password_re" id="password_re" required>
+                <p id="checkrepeat"></p>
+                <br>
+                <button type="submit" class="btn">Reset Password</button>
+            </form>
+        </div>
+    </div>
+    <script src="./js/forgetpwd.js"></script>
+</body>
+</html>

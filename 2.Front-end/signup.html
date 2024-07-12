@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="zh_CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="./css/signup.css">
+</head>
+<body>
+<div class="back">
+    <img id="myPicture" src="./imgs/back.jpg"/>
+</div>
+
+<div class="box">
+    <img src="./imgs/bg.jpg" alt="" id="frontpic">
+    <div class="right">
+        <p id="title">SignUp</p>
+        <form action="/Web_war_exploded/signup" method="post" id="myform">
+            <label for="username">UserName:</label>
+            <input type="text" placeholder="  UserName" id="username" name="username">
+            <p id="nameused"></p>
+            <label for="email">Email:</label>
+            <input type="email" placeholder="  Email" id="email" name="email">
+            <p id="used"></p>
+            <label for="password">Password:</label>
+            <input type="password" placeholder="  Password" id="userpassword" name="password">
+            <p id="checklength"></p>
+            <label for="userpassword_repeat">Repeat:</label>
+            <input type="password" placeholder="  Enter Password Again" id="userpassword_repeat">
+            <p id="checkrepeat"></p>
+            <button type="submit" class="btn" id="signbtn">注册</button>
+        </form>
+    </div>
+</div>
+<script src="./js/signup.js"></script>
+</body>
+</html>

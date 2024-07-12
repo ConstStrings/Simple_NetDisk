@@ -1,0 +1,367 @@
+body{
+    user-select: none;
+}
+
+.back #background{
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    opacity: 0.8;
+    object-fit: cover;
+}
+
+.back #back_top{
+    background-color: rgba(100, 98, 98, 0.8);
+    width: 100vw;
+    height: 6vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 3vh;
+    display: inline-block;
+    font-weight: 600;
+    z-index: 99;
+}
+
+.back #title_name{
+    position: absolute;
+    margin-top: 0;
+    top: 0.5vh;
+    left: 1vw;
+    color: aliceblue;
+    font-size: 4vh;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+}
+
+.back #back_left{
+    background-color: rgba(201, 191, 191, 0.8);
+    width: 6vw;
+    height: 94vh;
+    position: absolute;
+    top: 6vh;
+    left: 0;
+    z-index: 9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.back #welcome{
+    font-size: 2vh;
+    display: inline-block;
+    font-weight: 600;
+    position: absolute;
+    top: 1.5vh;
+    margin-top: 0;
+    left: 1vw;
+    color: aliceblue;
+}
+
+.back #logout{
+    font-size: 2vh;
+    display: inline-block;
+    font-weight: 600;
+    position: absolute;
+    top: 1.5vh;
+    margin-top: 0;
+    left: 90vw;
+    color: aliceblue;
+}
+
+.back #exit{
+    width: 4vh;
+    height: 4vh;
+    position: absolute;
+    z-index: 100;
+    left: 95vw;
+}
+
+.back #setting{
+    width: 5vh;
+    height: 5vh;
+    position: absolute;
+    z-index: 100;
+    top: 92vh;
+    left: 1.5vw;
+}
+
+.back #menu{
+    width: 5vh;
+    height: 5vh;
+    position: absolute;
+    z-index: 100;
+    top: 82vh;
+    left: 1.5vw;
+}
+
+.back #userheads{
+    width: 4vw;
+    height: 4vw;
+    position: absolute;
+    z-index: 100;
+    top: 8vh;
+    left: 1vw;
+    border-radius: 50%;
+    object-fit: cover; 
+}
+
+#upload{
+    width: 12vh;
+    height: 14vh;
+    position: absolute;
+    top: 10vh;
+    left: 10vw;
+    background-color: rgba(244, 241, 241, 0.6);
+    border-radius: 1vh;
+    z-index: 99;
+}
+
+.files #logo{
+    width: 8vh;
+    height: 8vh;
+    position: absolute;
+    top: 2vh;
+    left: 1vw;
+    z-index: 999;
+}
+
+.files p{
+    position: absolute;
+    top: 9vh;
+    left: 1.5vw;
+    font-weight: 800;
+}
+
+#upload:hover{
+    background-color:rgba(255, 255, 255, 0.6) ;
+}
+
+
+#floatingWindow {
+    position: fixed;
+    bottom: 30vh;
+    right: 50vw;
+    width: 20vw;
+    height: 10vw;
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 9999; /* 确保悬浮窗口位于其他元素之上 */
+    display: none; /* 初始时隐藏悬浮窗口 */
+}
+
+  /* 悬浮窗口标题栏的样式 */
+#floatingWindow .titleBar {
+    background-color: #f0f0f0;
+    border-bottom: 1px solid #ccc;
+    padding: 8px;
+    cursor: move; /* 允许拖动悬浮窗口 */
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    font-size: 1em;
+    font-weight: 800;
+}
+
+  /* 悬浮窗口内容区的样式 */
+#floatingWindow .content {
+    padding: 8px;
+}
+
+#floatingWindow label{
+    font-size: 1em;
+    font-weight: 800;
+}
+
+#uploadbtn{
+    position: absolute;
+    top: 12vh;
+    width: 16vw;
+    left: 2vw;
+    background-color: black;
+    color: aliceblue;
+    font-size: 1em;
+    font-weight: 800;
+    border-radius: 0.5vw;
+}
+
+#file_name{
+    margin-left: 2vw;
+}
+
+#file_upload{
+    margin-left: 2vw;   
+}
+
+.fileblock{
+    width: 12vh;
+    height: 14vh;
+    position: absolute;
+    top: 10vh;
+    left: 10vw;
+    background-color: rgba(244, 241, 241, 0.6);
+    border-radius: 1vh;
+    z-index: 99;
+}
+
+.fileblock #logo{
+    width: 8vh;
+    height: 8vh;
+    position: absolute;
+    top: 2vh;
+    left: 1vw;
+    z-index: 999;
+}
+
+.fileblock p{
+    position: absolute;
+    top: 9vh;
+    left: 1vw;
+    font-weight: 800;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis; 
+    max-width: 9vh; 
+}
+
+#floatingWindow2 {
+    position: fixed;
+    bottom: 30vh;
+    right: 20vw;
+    width: 20vw;
+    height: 10vw;
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 9999; /* 确保悬浮窗口位于其他元素之上 */
+    display: none; /* 初始时隐藏悬浮窗口 */
+}
+
+  /* 悬浮窗口标题栏的样式 */
+#floatingWindow2 .titleBar2 {
+    background-color: #f0f0f0;
+    border-bottom: 1px solid #ccc;
+    padding: 8px;
+    cursor: move; /* 允许拖动悬浮窗口 */
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    font-size: 1em;
+    font-weight: 800;
+}
+
+  /* 悬浮窗口内容区的样式 */
+#floatingWindow2 .content {
+    padding: 8px;
+}
+
+#download_btn{
+    position: absolute;
+    top: 12vh;
+    width: 16vw;
+    left: 2vw;
+    background-color: black;
+    color: aliceblue;
+    font-size: 1em;
+    font-weight: 800;
+    border-radius: 0.5vw;
+}
+
+#delete_btn{
+    position: absolute;
+    top: 7vh;
+    width: 6vw;
+    left: 12vw;
+    background-color: rgb(176, 8, 8);
+    color: aliceblue;
+    font-size: 1em;
+    font-weight: 800;
+    border-radius: 0.5vw;
+}
+
+#floatingWindow2 p{
+    font-size: 1.5em;
+    font-weight: 800;
+    position: absolute;
+    top: 4vh;
+    left: 2vw;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis; 
+    max-width: 10vw; 
+}
+
+#close-button {
+    position: absolute;
+    top: 0.6vh;
+    left: 18vw;
+    width: 1vh;
+    height: vh;
+    text-align: center;
+    line-height: 25px;
+    cursor: pointer;
+}
+
+#close-button2 {
+    position: absolute;
+    top: 0.6vh;
+    left: 18vw;
+    width: 1vh;
+    height: vh;
+    text-align: center;
+    line-height: 25px;
+    cursor: pointer;
+}
+
+#usage_board{
+    background-color: transparent;
+    border: 2px solid gray;
+    position: absolute;
+    left: 16px;
+    bottom: 200px;
+    width: 4vw;
+    height: 500px;
+}
+
+#usage{
+    background-color: seashell;
+    position: absolute;
+    left: 18px;
+    bottom: 202px;
+    width: 4vw;
+    height: 0px;
+    transition: 0.5s;
+}
+
+#usage:hover{
+    height: 500px;
+    transition: 0.5s;
+}
+
+
+
+#us_word{
+    font-size: 2vh;
+    display: inline-block;
+    font-weight: 600;
+    position: absolute;
+    top: 100px;
+    margin-top: 0;
+    left:20px;
+    color: rgb(255, 255, 255);
+}
+
+#us_num{
+    font-size: 2vh;
+    display: inline-block;
+    font-weight: 600;
+    position: absolute;
+    top: 130px;
+    margin-top: 0;
+    color: rgb(255, 255, 255);
+}
+

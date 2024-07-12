@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="zh_CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="./css/home.css">
+</head>
+<body>
+    <div class="back">
+        <img src="./imgs/home.jpg" alt="" id="background">
+        <div id="back_top">
+            <p id="logout">Log Out</p>
+            <p id="welcome">Welcome User</p>
+        </div>
+        <div id="back_left">
+            <h2 id="us_word">Usage</h2>
+            <h2 id="us_num">0%</h2>
+            <div id="usage_board"></div>
+            <div id="usage"></div>
+        </div>
+        <img src="./imgs/exit.png" alt="" id="exit">
+        <img src="./imgs/setting.png" alt="" id="setting">
+        <img src="./imgs/menu.png" alt="" id="menu">
+        <img src="./imgs/userheads.jpg" alt="" id="userheads">
+    </div>
+
+    <div class="files">
+        <div id="upload">
+            <img src="./imgs/logo_update.png" alt="" id="logo">
+            <p>Upload</p>
+        </div>
+    </div>
+
+    <div id="floatingWindow">
+        <div class="titleBar">File Uplaod
+            <div id="close-button">X</div>
+        </div>
+        <form action="/Web_war_exploded/upload" method="post" enctype="multipart/form-data">
+            <br>
+            <input type="file" name="file" id="file_upload" />
+            <br>
+            <label for="filename" id="file_name">文件名(可选):</label>
+            <input type="text" name="filename" id="filename"/>
+            <br>
+            <input type="text" value="" name="username" id="username_sub" style="display: none;">
+            <button type="submit" id="uploadbtn">上传</button>
+        </form>
+        <div id="progress"></div>
+    </div>
+
+    <div id="floatingWindow2">
+        <div class="titleBar2">File Download
+            <div id="close-button2">X</div>
+        </div>
+        <p id="download_name"></p>
+        <button id="delete_btn">删除文件</button>
+        <button id="download_btn">点击下载</button>
+        <div id="progress"></div>
+    </div>
+
+    <script src="./js/home.js"></script>
+</body>
+</html>
